@@ -1,15 +1,16 @@
-import {Component} from 'angular2/core';
+import {View, Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {HomeComponent} from '../home/home';
 
+import {MATERIAL_DIRECTIVES} from '../../../node_modules/ng2-material/all';
+
 import {componentProxyFactory} from '../../core/dynamic-component-loader';
 
-@Component({
-  selector: 'iBooknail',
+@Component({ selector: 'iBooknail' })
+@View({
   templateUrl: 'app/components/app/app.html',
-  // styleUrls: ['app/app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
-  // providers: [HeroService]
+  // styleUrls: ['examples/components/button/basic_usage.css'],
+  directives: [ROUTER_DIRECTIVES, MATERIAL_DIRECTIVES]
 })
 @RouteConfig([
   {path: '/', name: 'Home', component: HomeComponent, useAsDefault: true},

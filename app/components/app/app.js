@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', '../home/home', '../../core/dynamic-component-loader'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', '../home/home', '../../../node_modules/ng2-material/all', '../../core/dynamic-component-loader'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', '../home/home', '../../core
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, home_1, dynamic_component_loader_1;
+    var core_1, router_1, home_1, all_1, dynamic_component_loader_1;
     var AppComponent;
     return {
         setters:[
@@ -23,6 +23,9 @@ System.register(['angular2/core', 'angular2/router', '../home/home', '../../core
             function (home_1_1) {
                 home_1 = home_1_1;
             },
+            function (all_1_1) {
+                all_1 = all_1_1;
+            },
             function (dynamic_component_loader_1_1) {
                 dynamic_component_loader_1 = dynamic_component_loader_1_1;
             }],
@@ -32,11 +35,11 @@ System.register(['angular2/core', 'angular2/router', '../home/home', '../../core
                     this.title = '';
                 }
                 AppComponent = __decorate([
-                    core_1.Component({
-                        selector: 'iBooknail',
+                    core_1.Component({ selector: 'iBooknail' }),
+                    core_1.View({
                         templateUrl: 'app/components/app/app.html',
-                        // styleUrls: ['app/app.component.css'],
-                        directives: [router_1.ROUTER_DIRECTIVES],
+                        // styleUrls: ['examples/components/button/basic_usage.css'],
+                        directives: [router_1.ROUTER_DIRECTIVES, all_1.MATERIAL_DIRECTIVES]
                     }),
                     router_1.RouteConfig([
                         { path: '/', name: 'Home', component: home_1.HomeComponent, useAsDefault: true },

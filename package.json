@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "angular2": "2.0.0-beta.7",
+    "ng2-material": "0.2.8",
+    "bootstrap": "3.3.6",
     "systemjs": "0.19.22",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",

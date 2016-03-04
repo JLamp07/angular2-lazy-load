@@ -1,12 +1,7 @@
 {
-	"version": 3,
-	"file": "styles.css",
-	"sources": [
-		"../scss/styles.scss"
-	],
-	"sourcesContent": [
-		""
-	],
-	"mappings": "",
-	"names": []
+"version": 3,
+"mappings": "AAAA,IAAK,CACH,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,IAAI",
+"sources": ["../scss/styles.scss"],
+"names": [],
+"file": "styles.css"
 }
